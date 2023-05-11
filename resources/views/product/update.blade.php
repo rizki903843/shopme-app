@@ -10,7 +10,7 @@
 
 @section('content')
     <h5 class="mb-4">Edit Product</h5>
-    <form action="{{ route('product.update',$product->id) }}" method="post" enctype="multipart/form-data">
+    {{-- <form action="{{ route('product.update',$product->id) }}" method="post" enctype="multipart/form-data"> --}}
     <form action="{{ route('admin.product.update',$product->id) }}" method="post" enctype="multipart/form-data">
         @method("PUT")
         @csrf
