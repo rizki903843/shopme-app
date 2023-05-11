@@ -42,7 +42,6 @@ class ProductController extends Controller
         $filename = time() . '.' . $file->getClientOriginalExtension();
         $photo_path = $request->file('photo')->storeAs('public/products',$filename);
 
-        //menghapus string 'public/' karena dapat menyulitkan pemanggilan di blade.
         $photo_path = str_replace('public/','',$photo_path);
 
         $data = [
@@ -100,8 +99,6 @@ class ProductController extends Controller
         $filename = time() . '.' . $file->getClientOriginalExtension();
         $photo_path = $request->file('photo')->storeAs('public/products',$filename);
 
-        //menghapus string 'public/' karena dapat menyulitkan pemanggilan di blade.
-        // $photo_path = str_replace('public/','',$photo_path);
         $photo_path = str_replace('public/','',$photo_path);
 
         $product = Product::find($id);

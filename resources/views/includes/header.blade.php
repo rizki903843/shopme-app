@@ -16,29 +16,7 @@
                 @else
                     @include('includes.navbar-customer')
                 @endif
-            @else
-                @include('includes.navbar-customer')
             @endif
-
-            <ul class="navbar-nav col-6">
-                <form class="col-12 mb-2 mb-lg-0 me-lg-auto" role="search">
-                    <div class="input-group rounded-pill">
-
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            All Categories
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-
-                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
-                            id="searchNavbar">
-                    </div>
-                </form>
-            </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
